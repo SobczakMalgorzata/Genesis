@@ -1,0 +1,26 @@
+<Universal App>
+
+<Library>
+	<Exists:/>
+	- Note Class with: Title, Body, TagList
+
+	<To Do:/>
+	- Tag
+	- Timeline
+</Library>
+	<Exists:/>
+	- Simple Display
+
+	<To Do:/>
+	- Menu
+	- Other views
+	- Filters
+</Universal App>
+
+<Xamarin>
+	<Exists:/>
+	- Nothing
+
+	<To Do:/>
+	- Create Application
+</Xamarin>

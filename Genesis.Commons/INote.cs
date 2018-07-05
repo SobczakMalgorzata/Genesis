@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genesis
+namespace Genesis.Commons
 {
-    public class Class1
+    interface INote
     {
     }
 }

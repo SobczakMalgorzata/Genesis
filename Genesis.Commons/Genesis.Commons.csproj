@@ -34,13 +34,18 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <Folder Include="Classes\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="INote.cs" />
+    <Compile Include="ITag.cs" />
+    <Compile Include="ITimelineContainer.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="NoteViewModelPopulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tag.cs" />
+    <Compile Include="TimelineContainer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

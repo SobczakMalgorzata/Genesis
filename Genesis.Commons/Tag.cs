@@ -6,22 +6,35 @@ using System.Threading.Tasks;
 
 namespace Genesis.Commons
 {
-    public class Tag
+    public class Tag : ITag
     {
-        public string Name { get; set; }
+        private string _Name;
+
+        public string Name
+        {
+            get
+            {
+                return _Name;
+            }
+
+            set
+            {
+                _Name = value;
+            }
+        }
 
         public Tag(string name = "")
         {
-            Name = name;
+            _Name = name;
         }
 
-        public bool updateTag(string name = "")
+        bool ITag.updateTagName(string name = "")
         {
-            if (String.Equals(Name, name))
+            if (String.Equals(_Name, name))
             { return false; }
             else
             {
-                Name = name;
+                _Name = name;
                 return true;
             }
         }

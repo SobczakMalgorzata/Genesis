@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
     <!--<Grid>
         <StackPanel Name="ListDisplay"/>
 
@@ -18,8 +18,10 @@
             <ListView.ItemTemplate>
                 <DataTemplate x:Name="DoubleLineDataTemplate" x:DataType="common:Note">
                     <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="12,0,0,0">
-                        <TextBlock Text="{x:Bind Title}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
-                        <TextBlock Text="{x:Bind Body}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
+                        <!--<TextBlock Text="{x:Bind Title}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
+                        <TextBlock Text="{x:Bind Body}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>-->
+                        <TextBox Text="{x:Bind Title}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
+                        <TextBox Text="{x:Bind Body}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

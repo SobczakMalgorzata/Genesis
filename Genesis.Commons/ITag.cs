@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace Genesis.Commons
 {
-    interface INote
+    interface ITag
     {
         //Properties
-        List<Tag> Tags { get; set; }
+        string Name { get; set; }
 
         //Methods
-        //Title
-        bool updateTitle(string title);
-        //Tag
-        bool addTag(Tag tag);
-        bool removeTag(Tag tag);
-
+        bool updateTagName(string name = "");
     }
 }

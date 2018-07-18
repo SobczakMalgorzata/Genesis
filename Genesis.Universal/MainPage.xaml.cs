@@ -30,18 +30,7 @@ namespace Genesis.Universal
         {
             this.InitializeComponent();
             this.ViewModel = new NoteViewModelPopulation();
-            //ListView listView = Populate();
-            //ListDisplay.Children.Add(listView);
-        }
-        ListView Populate()
-        {
-            ListView listView = new ListView();
-            ObservableCollection<string> listItems = new ObservableCollection<string>();
-            Note tmp = new Note("Franek", "Jestem Super");
-            listItems.Add(tmp.Title);
-
-            listView.ItemsSource = listItems;
-            return listView;
+            
         }
     }
 }

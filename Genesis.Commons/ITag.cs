@@ -12,6 +12,6 @@ namespace Genesis.Commons
         string Name { get; set; }
 
         //Methods
-        bool updateTagName(string name = "");
+        bool updateTagName(string name);
     }
 }

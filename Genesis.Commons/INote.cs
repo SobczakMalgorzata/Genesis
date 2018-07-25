@@ -9,14 +9,11 @@ namespace Genesis.Commons
     interface INote
     {
         //Properties
-        List<Tag> Tags { get; set; }
+        HashSet<Tag> Tags { get; set; }
 
         //Methods
-        //Title
-        bool updateTitle(string title);
+        
         //Tag
-        bool addTag(Tag tag);
-        bool removeTag(Tag tag);
-
+        
     }
 }

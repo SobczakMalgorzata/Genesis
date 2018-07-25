@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genesis.Commons
+namespace Genesis.Models
 {
-    interface ITimelineContainer
+    public class Tag
     {
-        //Properties
-        Note Note { get; set; }
-
-        //Methods
-
+        public string Name { get; set; }
+        
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genesis.Commons
+namespace Genesis.Models
 {
     public class NoteViewModelPopulation
     {
